@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/home.scss" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="[CDN CSS URL]" />
+        <script src="[CDN JS URL]"></script>
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[1170px] max-xl:w-[80%] max-sm:w-full p-[30px] m-auto bg-white rounded-b-[5px] max-sm:rounded-none z-10 h-auto max-xl:py-[20px] max-lg:py-[10px] max-sm:py-[5px] max-sm:px-10"
+        >
+            <div class="flex justify-between max-lg:items-center">
+
+                <img src="./public/homePage/icon/бургер.png" class="w-5 h-5 max-sm:w-4 max-sm:h-4 hidden max-lg:block cursor-pointer" alt="">
+
+                <img
+                    src="./public/logo.jpg"
+                    width="285"
+                    height="90"
+                    alt=""
+                    class="max-xl:w-[250px] max-xl:h-[80px] max-lg:w-[170px] max-lg:h-[50px] max-sm:w-[140px] max-sm:h-[40px]"
+                />
+
+                <div class="flex flex-col gap-5 max-xl:hidden">
+                    <div class="flex items-center justify-between">
+                        <select
+                            title="city"
+                            id="cars"
+                            class="w-[145px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                        >
+                            <option value="moskow" selected>Москва</option>
+                            <option value="moskow">Москва</option>
+                            <option value="moskow">Москва</option>
+                            <option value="moskow">Москва</option>
+                        </select>
+
+                        <div class="flex items-center gap-[5px]">
+                            <img src="./public/icon/вотсап.png" alt="" />
+                            <img src="./public/icon/тг.png" alt="" />
+                            <img src="./public/icon/почта.png" alt="" />
+                            <img src="./public/icon/вк.png" alt="" />
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-[15px] decoration-dashed text-[18px] font-[800] text-[#333333] uppercase"
+                    >
+                        <a href="#">
+                            <span>Услуги</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Отчёты </span>
+                        </a>
+
+                        <a href="#">
+                            <span>Цены</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Статьи</span>
+                        </a>
+
+                        <a href="#">
+                            <span>О нас</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Контакты</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5 max-xl:gap-2 max-lg:hidden">
+                    <a
+                        class="text-[18px] font-normal text-[#333333] decoration-dashed"
+                        href="tel:+7(499)112-06-08"
+                        >+7 (499) 112-06-08</a
+                    >
+                    <button
+                        class="bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
+                    >
+                        Заказать звонок
+                    </button>
+                </div>
+
+                <img src="./public/icon/call-icon.png" class="w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block" alt="">
+            </div>
+
+            <div class="w-[500px] m-auto flex-col mt-3 gap-5 max-xl:gap-2 hidden max-xl:flex max-lg:hidden">
+                <div class="flex items-center justify-between">
+                    <select
+                        title="city"
+                        id="cars"
+                        class="w-[145px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                    >
+                        <option value="moskow" selected>Москва</option>
+                        <option value="moskow">Москва</option>
+                        <option value="moskow">Москва</option>
+                        <option value="moskow">Москва</option>
+                    </select>
+
+                    <div class="flex items-center gap-[5px]">
+                        <img src="./public/icon/вотсап.png" alt="" />
+                        <img src="./public/icon/тг.png" alt="" />
+                        <img src="./public/icon/почта.png" alt="" />
+                        <img src="./public/icon/вк.png" alt="" />
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center justify-center gap-[15px] decoration-dashed text-[18px] font-extrabold text-[#333333] uppercase max-xl:text-[17px] max-xl:gap-[10px] max-xl:font-bold"
+                >
+                    <a href="#">
+                        <span>Услуги</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Отчёты </span>
+                    </a>
+
+                    <a href="#">
+                        <span>Цены</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Статьи</span>
+                    </a>
+
+                    <a href="#">
+                        <span>О нас</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Контакты</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+         <main>
+            <section
+                class="w-full h-[720px] max-xl:h-[620px] max-lg:h-[480px] max-md:h-[390px] max-sm:h-[350px] bg-[url('../public/homePage/image/section1.jpg')] bg-center bg-no-repeat bg-cover pt-[220px] max-xl:pt-[250px] max-lg:pt-[100px] max-md:pt-[90px] max-sm:pt-[70px] relative"
+            >
+                <div class="w-[70%] max-md:w-[80%] max-sm:w-[90%] m-auto">
+                    <h1 class="text-5xl	max-xl:text-4xl	max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-white font-extrabold">
+                        Профессиональная приемка <br />
+                        квартир в новостройках 
+                    </h1>
+
+                    <p class="mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] text-2xl text-white font-medium max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm">
+                        Помощь специалистов при приемке квартир <br />
+                        в новостройках от Застройщика и взысканию <br />
+                        с Застройщика за недостатки до 2 млн руб.
+                    </p>
+
+                    <button
+                        class="mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] bg-[#f6943b] px-[30px] py-[16px] max-xl:py-[12px] max-md:px-[15px] max-md:py-[8px] rounded-[10px] font-medium text-[18px] text-white max-lg:text-base max-md:text-sm"
+                    >
+                        Получить консультацию
+                    </button>
+                </div>
+
+                <div
+                    class="w-[730px] max-xl:w-[650px] max-md:w-[80%] max-sm:w-[90%] absolute left-1/2 -bottom-[85px] max-lg:-bottom-[65px] max-md:-bottom-[50px] max-[500px]:-bottom-[25%] -translate-x-1/2 px-[40px] max-sm:px-[20px] py-[30px] max-xl:px-[30px] max-xl:py-[25px] max-lg:py-[20px] max-md:py-[15px] bg-gradient-to-r from-[#895acf] to-[#aa5acf] flex items-center justify-between gap-[40px] rounded-[5px]"
+                >
+                    <div class="max-sm:w-[75%]">
+                        <div
+                            class="flex max-[500px]:flex-col items-center max-[500px]:items-start gap-[10px] max-[500px]:gap-[2px] text-[34px] max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg font-bold text-white"
+                        >
+                            <p class="line-through">5000</p>
+                            <p>ПРИЁМКА БЕСПЛАТНО</p>
+                        </div>
+                        <p class="mt-[10px] max-lg:mt-[5px] text-[18px] max-xl:text-base max-md:text-sm max-sm:text-xs font-medium text-white">
+                            При заключени договора на взыскание компенсации
+                            <br />
+                            за строительные недостатки
+                        </p>
+                    </div>
+
+                    <img src="./public/homePage/image/coin 1.png"  alt="" class="max-md:w-[60px] max-md:h-[60px] max-sm:absolute max-sm:-top-5 max-sm:right-5"/>
+                </div>
+            </section>
+
+           <section class="w-[730px] max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] mt-[140px] max-lg:mt-[100px] max-md:mt-[70px] max-sm:mt-[110px] m-auto mb-[100px] max-lg:mb-[80px] max-md:mb-[60px] max-sm:mb-[40px]">
+                <p class="text-[42px] max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-[#333333] font-extrabold">
+                    По статистике 99% новостроек <br />
+                    в РФ сдается с недостатками
+                </p>
+
+                <p class="mt-[30px] max-lg:mt-[15px] max-md:mt-[10px] text-[18px] max-md:text-base max-sm:text-sm text-[#333333] font-medium">
+                    Поэтому так важно при приемке квартиры сразу выявить все
+                    дефекты <br />
+                    и помощь профессионалов при этом будет незаменима. <br />
+                    <br />
+                    Согласно Федеральному закону №214, застройщик обязан
+                    бесплатно устранить все дефекты, обнаруженные при приемке
+                    вашей квартиры.
+                </p>
+
+                <div
+                    class="bg-[#f4ecfa] p-[30px] max-md:pt-[60px] mt-[40px] max-lg:mt-[25px] flex items-center gap-5 rounded-[5px] relative"
+                >
+                    <img src="./public/homePage/toTopHend.png" alt="" class="max-md:absolute max-md:-top-5 left-[20px]" />
+                    <p class="text-[18px] max-md:text-base max-sm:text-sm font-medium text-[#333333]">
+                        НО при несоблюдении правил приемки и составления
+                        нормативно-правовых документов застройщик может выиграть
+                        дело и отказать в устранении недостатков <br />и
+                        компенсации. <br /><br />
+                        Поэтому важно обращаться к специалистам, имеющим большой
+                        опыт и необходимые документы и разрешения.
+                    </p>
+                </div>
+
+                <p class="mt-[40px] max-lg:mt-[25px] max-md:mt-[20px] text-[22px] max-lg:text-[20px] max-md:text-lg  max-sm:text-base font-medium text-[#333333]">
+                    Ежедневно наши специалисты осуществляют
+                    <span>от 7 до 15 приемок</span> квартир в день. Сумма
+                    коменсации, полученных нашими клиентами,
+                    <span class="font-extrabold text-[#8859cf]"
+                        >от 600 до 2 млн руб.</span
+                    >
+                </p>
+            </section>
+
+            <section class="bg-[#f4ecfa] pt-[60px] pb-[40px]">
+                <div class="w-[70%] m-auto">
+                    <p
+                        class="text-[42px] font-medium text-[#333333] text-center"
+                    >
+                        Услуги компании
+                    </p>
+
+                    <div class="mt-[20px] grid grid-cols-3 gap-[20px]">
+                        <div
+                            class="bg-white rounded-[5px] flex items-center flex-col justify-center py-[40px]"
+                        >
+                            <div class="flex items-center gap-[10px]">
+                                <img
+                                    src="./public/homePage/icon/star_1.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="mt-[35px]">
+                                <p
+                                    class="text-[24px] font-bold text-[#333333] text-center"
+                                >
+                                    Черновая
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[14px] font-medium text-[#777777] text-center"
+                                >
+                                    Стоимость:
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[20px] font-bold text-[#333333] text-center"
+                                >
+                                    60 руб./м2
+                                </p>
+                            </div>
+                            <button
+                                class="mt-[35px] bg-[#f6943b] px-[20px] py-[12px] rounded-[10px] font-semibold text-[16px] text-white"
+                            >
+                                Заказать приемку
+                            </button>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-[5px] flex items-center flex-col justify-center py-[40px]"
+                        >
+                            <div class="flex items-center gap-[10px]">
+                                <img
+                                    src="./public/homePage/icon/star_1.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="mt-[35px]">
+                                <p
+                                    class="text-[24px] font-bold text-[#333333] text-center"
+                                >
+                                    Предчистовая
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[14px] font-medium text-[#777777] text-center line-through"
+                                >
+                                    70 руб./м2
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[20px] font-bold text-[#333333] text-center"
+                                >
+                                    2 000 руб.<br />
+                                    за квартиру
+                                </p>
+                            </div>
+                            <button
+                                class="mt-[20px] bg-[#f6943b] px-[20px] py-[12px] rounded-[10px] font-semibold text-[16px] text-white"
+                            >
+                                Заказать приемку
+                            </button>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-[5px] flex items-center flex-col justify-center py-[40px]"
+                        >
+                            <div class="flex items-center gap-[10px]">
+                                <img
+                                    src="./public/homePage/icon/star_1.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/homePage/icon/star_2.png"
+                                    width="44"
+                                    height="44"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="mt-[35px]">
+                                <p
+                                    class="text-[24px] font-bold text-[#333333] text-center"
+                                >
+                                    С чистовой отделкой
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[14px] font-medium text-[#777777] text-center line-through"
+                                >
+                                    80 руб./м2
+                                </p>
+                                <p
+                                    class="mt-[10px] text-[20px] font-bold text-[#333333] text-center"
+                                >
+                                    4 000 руб.<br />за квартиру
+                                </p>
+                            </div>
+                            <button
+                                class="mt-[20px] bg-[#f6943b] px-[20px] py-[12px] rounded-[10px] font-semibold text-[16px] text-white"
+                            >
+                                Заказать приемку
+                            </button>
+                        </div>
+                    </div>
+                    <p
+                        class="text-[28px] font-medium text-[#333333] text-center mt-[50px]"
+                    >
+                        Дополнительные услуги
+                    </p>
+
+                    <div class="flex items-center justify-between mt-[30px]">
+                        <div class="flex items-center gap-[40px]">
+                            <img src="/homePage/icon/teplovizor.png" alt="" />
+                            <div class="flex flex-col gap-[2px]">
+                                <p class="text-[18px] font-medium">
+                                    Тепловизор
+                                </p>
+                                <p class="text-[24px] font-bold text-[#8859cf]">
+                                    2 000 руб.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[40px]">
+                            <img src="./homePage/icon/zametki.png" alt="" />
+                            <div class="flex flex-col gap-[2px]">
+                                <p class="text-[18px] font-medium">
+                                    Тепловизор
+                                </p>
+                                <p class="text-[24px] font-bold text-[#8859cf]">
+                                    2 000 руб.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[40px]">
+                            <img src="/homePage/icon/otchoti.png" alt="" />
+                            <div class="flex flex-col gap-[2px]">
+                                <p class="text-[18px] font-medium">
+                                    Тепловизор
+                                </p>
+                                <p class="text-[24px] font-bold text-[#8859cf]">
+                                    2 000 руб.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-[75px] py-[50px] pl-[160px] pr-[100px] bg-gradient-to-r from-[#8859cf] to-[#a959cf] rounded-[5px] flex items-center justify-between gap-[40xp] relative"
+                    >
+                        <img
+                            class="absolute top-1/2 -translate-y-1/2 left-[40px]"
+                            src="/homePage/pesochnieChasi.png"
+                            alt=""
+                        />
+                        <div
+                            class="w-[40%] flex flex-col gap-[12px] items-center"
+                        >
+                            <p class="text-[42px] font-medium text-white">
+                                Акция
+                            </p>
+                            <div
+                                class="py-[8px] px-[14px] bg-black rounded-[10px]"
+                            >
+                                <p class="text-white text-[14px] font-medium">
+                                    до 25 декабря 2023
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[60%] flex items-center justify-between gap-[20xp]"
+                        >
+                            <div class="flex items-center flex-col gap-[20px]">
+                                <div class="flex items-center gap-[12px]">
+                                    <img
+                                        src="/homePage/icon/ptichka-icon.png"
+                                        alt=""
+                                    />
+                                    <p class="text-[18px] font-bold text-white">
+                                        Любая квартира
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-[12px]">
+                                    <img
+                                        src="/homePage/icon/ptichka-icon.png"
+                                        alt=""
+                                    />
+                                    <p class="text-[18px] font-bold text-white">
+                                        Любая квартира
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-[12px]">
+                                    <img
+                                        src="/homePage/icon/ptichka-icon.png"
+                                        alt=""
+                                    />
+                                    <p class="text-[18px] font-bold text-white">
+                                        Любая квартира
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="/homePage/icon/}.png" alt="" />
+                            <div class="flex flex-col gap-[10px]">
+                                <p class="text-[32px] font-bold text-white">
+                                    4 900 <span class="text-[18px]">руб.</span>
+                                </p>
+                                <button
+                                    class="bg-[#f6943b] px-[20px] py-[12px] font-medium text-white rounded-[10px]"
+                                >
+                                    Заказать приемку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-[100px]">
+                <div class="w-[70%] m-auto">
+                    <p class="text-[42px] text-center font-medium items-center">
+                        Преимущества работы <br />
+                        с нашей компанией
+                    </p>
+                    <div class="flex items-center gap-[40px] mt-[60px]">
+                        <div class="flex flex-col gap-[13px]">
+                            <img
+                                class="w-[60px] h-[60px]"
+                                src="/public/homePage/section4/icon1.png"
+                                alt=""
+                            />
+                            <p class="text-[18px] font-medium">
+                                Эксперты имеют все лицензии и состоят в НОПРИЗ
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[13px]">
+                            <img
+                                class="w-[60px] h-[60px]"
+                                src="/public/homePage/section4/icon2.png"
+                                alt=""
+                            />
+                            <p class="text-[18px] font-medium">
+                                Опыт более 10 лет успешной деятельности
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[13px]">
+                            <img
+                                class="w-[60px] h-[60px]"
+                                src="/public/homePage/section4/icon3.png"
+                                alt=""
+                            />
+                            <p class="text-[18px] font-medium">
+                                Провели более 12 000 проверок и выиграли более 7
+                                000 дел (100%)
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[13px]">
+                            <img
+                                class="w-[60px] h-[60px]"
+                                src="/public/homePage/section4/icon4.png"
+                                alt=""
+                            />
+                            <p class="text-[18px] font-medium">
+                                Оборудование сертифицировано и имеет все
+                                необходимые поверки
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[13px]">
+                            <img
+                                class="w-[60px] h-[60px]"
+                                src="/public/homePage/section4/icon5.png"
+                                alt=""
+                            />
+                            <p class="text-[18px] font-medium">
+                                Минимальные цены, чтобы услуги были доступны
+                                каждому
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-[50px] w-[70%] rounded-[5px] m-auto bg-[#F4ECFA] p-[40px] flex flex-col items-center justify-center"
+                    >
+                        <div class="flex items-center gap-[25px]">
+                            <img src="./public/homePage/1st-medal.png" alt="" />
+                            <p class="text-[22px] text-[#333333]">
+                                Не рискуйте — выбирайте профессионалов! <br />С
+                                нами качество вашей квартиры и ваша безопасность
+                                гарантированы!
+                            </p>
+                        </div>
+                        <button
+                            class="mt-[30px] bg-[#F6943B] px-[30px] py-[16px] rounded-[10px] text-[18px] font-medium text-white"
+                        >
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="w-full border-2 border-[#F4ECFA]" />
+
+            <section class="mt-[80px]">
+                <p class="text-[42px] text-[#333333] font-medium text-center">
+                    Что мы проверяем
+                </p>
+                <div class="w-[730px] m-auto mt-[20xp] flex flex-col gap-[5px]">
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/01.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/02.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/03.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/04.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/05.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/06.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[15px]">
+                                <img
+                                    src="./public/homePage/accordion/07.png"
+                                    alt=""
+                                />
+                                <p class="title text-[24px] font-medium">
+                                    Стены и перегородки
+                                </p>
+                            </div>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <ul class="mt-5">
+                            <li class="flex items-center gap-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Целостность стеклопакетов, дверных полотен,
+                                    профилей и т.д.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Работа фурнитуры и замков, регулировка
+                                    створок окон и дверей.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Плотность прилегания и плавность
+                                    закрытия\открытия окон и дверей
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-5 mt-5">
+                                <hr
+                                    class="border-2 border-[#8859CF] w-[25px]"
+                                />
+                                <p class="text-[18px] text-[#333333]">
+                                    Отклонения по вертикали и горизонтали
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="mt-[100px] bg-gradient-to-r from-[#8859cf] to-[#a959cf] pt-[80px] pb-[120px]"
+            >
+                <div class="w-[70%] m-auto">
+                    <p class="text-white text-[42px] font-medium text-center">
+                        Порядок работы
+                    </p>
+                    <div class="mt-[46px] w-full flex items-center gap-[45px]">
+                        <div class="flex flex-col gap-[7px]">
+                            <img
+                                width="70"
+                                height="70"
+                                src="./public/homePage/section6/priem-2-1.png"
+                                alt=""
+                            />
+                            <p
+                                class="text-[18px] font-medium text-white w-[240px]"
+                            >
+                                Специалист выявляет комплекс недостатков
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[7px]">
+                            <img
+                                width="70"
+                                height="70"
+                                src="./public/homePage/section6/priem-2-2.png"
+                                alt=""
+                            />
+                            <p
+                                class="text-[18px] font-medium text-white w-[240px]"
+                            >
+                                Составляется Акт осмотра квартиры с указанием
+                                всех недочётов
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[7px]">
+                            <img
+                                width="70"
+                                height="70"
+                                src="./public/homePage/section6/priem-2-3.png"
+                                alt=""
+                            />
+                            <p
+                                class="text-[18px] font-medium text-white w-[240px]"
+                            >
+                                Отправляется Техническое заключение для
+                                застройщика
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-[7px]">
+                            <img
+                                width="70"
+                                height="70"
+                                src="./public/homePage/section6/priem-2-4.png"
+                                alt=""
+                            />
+                            <p
+                                class="text-[18px] font-medium text-white w-[240px]"
+                            >
+                                Застройщик имеет <br />
+                                45 дней на устранение недостатков
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-[50px] bg-[#222222] m-auto max-w-[730px] px-[40px] pt-[30px] pb-[60px] relative flex items-start gap-[20px] rounded-[5px]"
+                    >
+                        <img
+                            src="./public/homePage/section6/balance.png"
+                            alt=""
+                        />
+                        <p class="text-white text-[22px] font-bold">
+                            Если застройщик не устранит недостатки <br />
+                            в срок — взыщем компенсацию через суд!
+                        </p>
+
+                        <div
+                            class="bg-white w-[60%] p-[20px] rounded-[5px] absolute left-1/2 -translate-x-1/2 -bottom-[50px]"
+                        >
+                            <p
+                                class="text-center text-[22px] font-bold text-[#8859CF]"
+                            >
+                                Сумма компенсаций наших клиентов доходит до 2
+                                млн руб.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-[100px]">
+                <div class="w-[730px] m-auto text-[#222222]">
+                    <p class="text-[40px] font-medium">
+                        Почему стоит заказать приемку квартиры у эксперта?
+                    </p>
+                    <p class="text-[18px] font-medium mt-[30px]">
+                        Приемка квартиры является важным этапом в процессе
+                        приобретения жилья. В этом процессе необходимо учитывать
+                        множество деталей и нюансов, которые могут повлиять на
+                        качество проживания в будущем, а также на возможные
+                        затраты на ремонт и обслуживание квартиры.
+                    </p>
+                    <p class="text-[18px] font-medium mt-[15px]">
+                        Иногда неприятности из-за некачественного ремонта могут
+                        прийти и от соседей, а виновной стороной, с которой
+                        будет взыщена компенсация, будете вы.Именно поэтому
+                        многие люди предпочитают заказывать услуги
+                        профессиональных приемщиков, которые помогут обнаружить
+                        и в дальнейшем устранить все недостатки, совершенные
+                        застройщиком при строительсве и ремонте квартиры и
+                        вселиться в максимально качественное жилье.
+                    </p>
+                    <p class="text-[24px] font-medium mt-[30px]">
+                        Почему стоит обратиться к экспертам по приемке?
+                    </p>
+                    <p class="text-[18px] font-medium mt-[20px]">
+                        Во-первых, профессиональные приемщики обладают большим
+                        опытом и знаниями в области строительства и
+                        недвижимости. Они знают все тонкости и нюансы приемки
+                        квартир и могут выявить скрытые дефекты, которые не
+                        видны невооруженным глазом, а также нарушения
+                        технологии, допущенной при строительных работах. Это
+                        позволяет избежать многих проблем в будущем и сэкономить
+                        деньги на ремонте. <br /><br />
+                        Во-вторых, профессиональные приемщики используют
+                        современное оборудование для проверки качества
+                        строительных работ. Это позволяет получить точные и
+                        объективные данные о состоянии квартиры, которые можно
+                        предъявить в суде для взыскания ущерба за допущенные
+                        недостатки. В-третьих, Профессиональные приемщики могут
+                        помочь с оформлением документов и консультацией по
+                        юридическим вопросам для взыскания за недостатки.
+                        <br /><br />
+                        В Акте осмотра квартиры указываются все обнаруженные
+                        дефекты. Это дает возможность покупателю принять
+                        взвешенное решение о необходимости потребовать от
+                        застройщика устранения выявленных недостатков или
+                        приступить к самостоятельному их устранению, если они не
+                        существенны. <br /><br />
+                        Стоит отметить, что услуги профессиональных приемщиков
+                        стоят относительно недорого. В нашей компании мы также
+                        предлагаем осуществить приемку квартиры бесплатно, при
+                        заключении договра на юридическое обслуживнаие по
+                        взысканию ущерба с застройщика. <br /><br />
+                        Заказ услуг профессиональных приемщиков позволяет
+                        сэкономить время и нервы. Вам не придется самостоятельно
+                        изучать все тонкости приемки квартир и тратить время на
+                        поиск специалистов. Профессионалы сделают всю работу за
+                        вас, и вы сможете спокойно наслаждаться своим новым
+                        жильем.
+                    </p>
+
+                    <div
+                        class="bg-[#f4ecfa] p-[30px] mt-[40px] flex items-start gap-5 rounded-[5px]"
+                    >
+                        <img src="./public/homePage/toTopHend.png" alt="" />
+                        <p class="text-[18px] font-medium text-[#333333]">
+                            Итак, заказать приемку квартиры у профессионалов —
+                            <br />
+                            это разумное и выгодное решение для любого
+                            покупателя жилья. Профессиональные приемщики помогут
+                            вам получить максимально качественное и комфортное
+                            жилье, <br />
+                            а также сэкономить время и деньги на ремонте и
+                            устранении возможных дефектов.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-[120px] bg-[#F4ECFA] py-[100px]">
+                <p class="text-[42px] font-medium text-center text-[#333333]">
+                    Отчеты с наших приемок
+                </p>
+                <div class="w-[70%] m-auto">
+                    <div class="mt-[30px] flex justify-between gap-[30px]">
+                        <div class="bg-white rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./public/homePage/section7/1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p class="text-[18px] font-medium mt-[10px]">
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./public/homePage/section7/2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px] text-[#333333]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./public/homePage/section7/3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p class="text-[18px] font-medium mt-[10px]">
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[30px] flex items-center justify-between">
+                        <div class="flex items-center gap-[10px]">
+                            <img src="./public/icon/to_right.png" alt="" />
+                            <img src="./public/icon/to_left.png" alt="" />
+                        </div>
+                        <button class="flex items-center gap-[15px]">
+                            <span class="text-[#8859CF] text-[24px] font-medium"
+                                >Все отчеты</span
+                            >
+                            <img
+                                src="./public/icon/right.png"
+                                height="6"
+                                width="12"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-[100px]">
+                <p class="text-[42px] font-medium text-center text-[#333333]">
+                    Отзывы с наших приемок
+                </p>
+                <p class="text-[18px] text-center text-[#333333]">
+                    Отзывы о работе адвокатов по приемке
+                </p>
+                <div class="w-[70%] m-auto">
+                    <div class="mt-[30px] flex justify-between gap-[30px]">
+                        <div class="bg-white rounded-[5px]">
+                            <img
+                                src="./public/homePage/section9/otzivi.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="bg-white rounded-[5px]">
+                            <img
+                                src="./public/homePage/section9/otzivi.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="bg-white rounded-[5px]">
+                            <img
+                                src="./public/homePage/section9/otzivi.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="bg-white rounded-[5px]">
+                            <img
+                                src="./public/homePage/section9/otzivi.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="mt-[30px] flex items-center justify-between">
+                        <div class="flex items-center gap-[10px]">
+                            <img src="./public/icon/to_right.png" alt="" />
+                            <img src="./public/icon/to_left.png" alt="" />
+                        </div>
+                        <button class="flex items-center gap-[15px]">
+                            <span class="text-[#8859CF] text-[24px] font-medium"
+                                >Все отчеты</span
+                            >
+                            <img
+                                src="./public/icon/right.png"
+                                height="6"
+                                width="12"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-[80px] border-t-2 border-[#F4ECFA]">
+                <p class="text-[42px] text-[#333333] font-medium text-center">
+                    Частые вопросы
+                </p>
+                <div
+                    class="w-[730px] m-auto mt-[40xp] flex flex-col gap-[25px]"
+                >
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_child accordion_style">
+                        <div class="flex items-center justify-between">
+                            <p class="title text-[24px] font-medium w-[90%]">
+                                Есть ли профильное образование у Ваших
+                                специалистов?
+                            </p>
+                            <img
+                                id="accordion_icon"
+                                src="./public/homePage/accardion_icon.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="w-[80%] m-auto">
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Услуги юриста по недвижимости требуются для
+                                проверки приобретаемого объекта жилья. Например,
+                                при приобретении дома или квартиры, профессионал
+                                может проверить объект <br />
+                                на предмет правовой чистоты, выяснить, находится
+                                ли он под обременением, залогом или арестом.
+                            </p>
+                            <p class="text-[#333333] text-[18px] mt-5">
+                                Также адвокат по недвижимости помогает в случае
+                                заключения договорных отношений. Довольно часто
+                                люди сталкиваются с мошенниками и черными
+                                риэлторами, которые совершают мошенничество при
+                                заключении договора.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="py-[80px] bg-gradient-to-r from-[#8859cf] to-[#a959cf]"
+            >
+                <div class="flex items-center justify-center gap-[70px]">
+                    <div class="">
+                        <p class="text-[42px] font-medium text-white">
+                            Контакты
+                        </p>
+                        <p class="text-[18px] text-white mt-[10px]">
+                            Остались вопросы? <br />
+                            Напишите или позвоните нам!
+                        </p>
+                        <div
+                            class="bg-white w-[330px] px-[30px] py-[40px] mt-[30px] rounded-[5px]"
+                        >
+                            <form class="flex flex-col gap-[10px]" action="#">
+                                <input
+                                    type="text"
+                                    placeholder="Ваше имя"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Телефон"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                />
+                                <textarea
+                                    type="text"
+                                    placeholder="Сообщение"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                ></textarea>
+                                <button
+                                    class="bg-[#F6943B] py-3 text-center rounded-[10px] font-semibold text-white"
+                                >
+                                    Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="text-[14px] text-white">Телефон:</p>
+                            <a
+                                href="tel:+7(499)113-79-58"
+                                class="text-[22px] font-medium text-white"
+                                >+7 (499) 113-79-58</a
+                            >
+                        </div>
+                        <div class="mt-[40px]">
+                            <p class="text-[14px] text-white">Почта:</p>
+                            <p
+                                class="text-[14px] text-[22px] font-medium text-white"
+                            >
+                                info@alliance-advokatov.ru
+                            </p>
+                        </div>
+                        <div class="mt-[40px]">
+                            <ul class="text-white font-medium">
+                                <li>
+                                    <p>Одесская 2 (БЦ "Лотос")</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>
+                                        Ог. Москва, Уланский переулок, д. 11 а
+                                    </p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, ул. Новаторов, 38, корп. 3</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, Люблинская ул., 40</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, Можайское ш., 25</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, ул. Михайлова, 43</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>
+                                        г. Москва, площадь Тверская Застава, 3
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="bg-[#444444] py-[50px]">
+                <div class="w-[70%] m-auto flex justify-between">
+                    <div>
+                        <ul
+                            class="text-white flex gap-5 text-[18px] font-medium"
+                        >
+                            <li>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Отчёты</a>
+                            </li>
+                            <li>
+                                <a href="#">Цены</a>
+                            </li>
+                            <li>
+                                <a href="#">Статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="mt-[30px]">
+                            <ul class="text-[#CACACA]">
+                                <li>Приемка квартиры с отделкой</li>
+                                <li class="mt-5">
+                                    Приёмка квартиры без отделки
+                                </li>
+                                <li class="mt-5">
+                                    Приемка квартиры с предчистовой отделкой
+                                </li>
+                                <li class="mt-5">
+                                    Взыскание с застройщика за недостатки
+                                    квартиры
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a
+                            href="tel:+7(499)113-79-58"
+                            class="text-[22px] font-medium text-white"
+                        >
+                            +7 (499) 113-79-58
+                        </a>
+                        <p class="mt-[10px] text-[#CACACA]">
+                            info@alliance-advokatov.ru
+                        </p>
+                        <p class="mt-[10px] text-[#CACACA]">
+                            г. Москва, ул. Михайлова, 43 <br />
+                            г. Москва, площадь Тверская Застава, 3
+                        </p>
+                        <div class="flex items-center gap-[10px] mt-5">
+                            <a href="#">
+                                <img src="./public/icon/tg-icon.png" alt="" />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./public/icon/wiber-icon.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#333333] py-[40px]">
+                <div
+                    class="w-[70%] m-auto flex justify-between text-[14px] text-[#AEAEAE]"
+                >
+                    <p class="">©АЛЬЯНС</p>
+                    <div class="flex items-center gap-5">
+                        <a href="#">Политика обработки персональных данных</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    border: none;
+}
+
+body{
+    color: #333333;
+}
+
+.container_first{
+    width: 1110px;
+    margin:0 auto;
+}
+
+.container_second{
+    width: 730px;
+    margin:0 auto;
+}
+
+.accordion_active{
+    width: 100%;
+    padding: 0 8px 8px 0;
+    height: auto;
+    margin: 0 auto;
+    border-bottom:rgb(180, 180, 180) solid 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.accordion_style{
+    width: 100%;
+    padding: 0 8px 8px 0;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom:rgb(180, 180, 180) solid 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
