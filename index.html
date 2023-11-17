@@ -8,6 +8,11 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="[CDN CSS URL]" />
         <script src="[CDN JS URL]"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <title>Vite App</title>
     </head>
     <body>
@@ -15,8 +20,11 @@
             class="absolute top-0 left-1/2 -translate-x-1/2 w-[1170px] max-xl:w-[80%] max-sm:w-full p-[30px] m-auto bg-white rounded-b-[5px] max-sm:rounded-none z-10 h-auto max-xl:py-[20px] max-lg:py-[10px] max-sm:py-[5px] max-sm:px-10"
         >
             <div class="flex justify-between max-lg:items-center">
-
-                <img src="./public/homePage/icon/бургер.png" class="w-5 h-5 max-sm:w-4 max-sm:h-4 hidden max-lg:block cursor-pointer" alt="">
+                <img
+                    src="./public/homePage/icon/бургер.png"
+                    class="w-5 h-5 max-sm:w-4 max-sm:h-4 hidden max-lg:block cursor-pointer"
+                    alt=""
+                />
 
                 <img
                     src="./public/logo.jpg"
@@ -40,10 +48,18 @@
                         </select>
 
                         <div class="flex items-center gap-[5px]">
-                            <img src="./public/icon/вотсап.png" alt="" />
-                            <img src="./public/icon/тг.png" alt="" />
-                            <img src="./public/icon/почта.png" alt="" />
-                            <img src="./public/icon/вк.png" alt="" />
+                            <a href="#">
+                                <img src="./public/icon/watsUp.svg" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="./public/icon/тг.svg" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="./public/icon/почта.svg" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="./public/icon/вк.svg" alt="" />
+                            </a>
                         </div>
                     </div>
                     <div
@@ -88,10 +104,16 @@
                     </button>
                 </div>
 
-                <img src="./public/icon/call-icon.png" class="w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block" alt="">
+                <img
+                    src="./public/icon/call-icon.png"
+                    class="w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block"
+                    alt=""
+                />
             </div>
 
-            <div class="w-[500px] m-auto flex-col mt-3 gap-5 max-xl:gap-2 hidden max-xl:flex max-lg:hidden">
+            <div
+                class="w-[500px] m-auto flex-col mt-3 gap-5 max-xl:gap-2 hidden max-xl:flex max-lg:hidden"
+            >
                 <div class="flex items-center justify-between">
                     <select
                         title="city"
@@ -105,7 +127,7 @@
                     </select>
 
                     <div class="flex items-center gap-[5px]">
-                        <img src="./public/icon/вотсап.png" alt="" />
+                        <img src="./public/icon/watsUp.svg" alt="" />
                         <img src="./public/icon/тг.png" alt="" />
                         <img src="./public/icon/почта.png" alt="" />
                         <img src="./public/icon/вк.png" alt="" />
@@ -142,17 +164,21 @@
             </div>
         </header>
 
-         <main>
+        <main>
             <section
-                class="w-full h-[720px] max-xl:h-[620px] max-lg:h-[480px] max-md:h-[390px] max-sm:h-[350px] bg-[url('../public/homePage/image/section1.jpg')] bg-center bg-no-repeat bg-cover pt-[220px] max-xl:pt-[250px] max-lg:pt-[100px] max-md:pt-[90px] max-sm:pt-[70px] relative"
+                class="w-full h-[720px] max-xl:h-[620px] max-lg:h-[480px] max-md:h-[390px] max-sm:h-[350px] bg-[url('./public/homePage/image/section1.jpg')] bg-center bg-no-repeat bg-cover pt-[220px] max-xl:pt-[250px] max-lg:pt-[100px] max-md:pt-[90px] max-sm:pt-[70px] relative"
             >
                 <div class="w-[70%] max-md:w-[80%] max-sm:w-[90%] m-auto">
-                    <h1 class="text-5xl	max-xl:text-4xl	max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-white font-extrabold">
+                    <h1
+                        class="text-5xl max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-white font-extrabold"
+                    >
                         Профессиональная приемка <br />
                         квартир в новостройках 
                     </h1>
 
-                    <p class="mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] text-2xl text-white font-medium max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm">
+                    <p
+                        class="mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] text-2xl text-white font-medium max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm"
+                    >
                         Помощь специалистов при приемке квартир <br />
                         в новостройках от Застройщика и взысканию <br />
                         с Застройщика за недостатки до 2 млн руб.
@@ -175,24 +201,36 @@
                             <p class="line-through">5000</p>
                             <p>ПРИЁМКА БЕСПЛАТНО</p>
                         </div>
-                        <p class="mt-[10px] max-lg:mt-[5px] text-[18px] max-xl:text-base max-md:text-sm max-sm:text-xs font-medium text-white">
+                        <p
+                            class="mt-[10px] max-lg:mt-[5px] text-[18px] max-xl:text-base max-md:text-sm max-sm:text-xs font-medium text-white"
+                        >
                             При заключени договора на взыскание компенсации
                             <br />
                             за строительные недостатки
                         </p>
                     </div>
 
-                    <img src="./public/homePage/image/coin 1.png"  alt="" class="max-md:w-[60px] max-md:h-[60px] max-sm:absolute max-sm:-top-5 max-sm:right-5"/>
+                    <img
+                        src="./public/homePage/image/coin 1.png"
+                        alt=""
+                        class="max-md:w-[60px] max-md:h-[60px] max-sm:absolute max-sm:-top-5 max-sm:right-5"
+                    />
                 </div>
             </section>
 
-           <section class="w-[730px] max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] mt-[140px] max-lg:mt-[100px] max-md:mt-[70px] max-sm:mt-[110px] m-auto mb-[100px] max-lg:mb-[80px] max-md:mb-[60px] max-sm:mb-[40px]">
-                <p class="text-[42px] max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-[#333333] font-extrabold">
+            <section
+                class="w-[730px] max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] mt-[140px] max-lg:mt-[100px] max-md:mt-[70px] max-sm:mt-[110px] m-auto mb-[100px] max-lg:mb-[80px] max-md:mb-[60px] max-sm:mb-[40px]"
+            >
+                <p
+                    class="text-[42px] max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-[#333333] font-extrabold"
+                >
                     По статистике 99% новостроек <br />
                     в РФ сдается с недостатками
                 </p>
 
-                <p class="mt-[30px] max-lg:mt-[15px] max-md:mt-[10px] text-[18px] max-md:text-base max-sm:text-sm text-[#333333] font-medium">
+                <p
+                    class="mt-[30px] max-lg:mt-[15px] max-md:mt-[10px] text-[18px] max-md:text-base max-sm:text-sm text-[#333333] font-medium"
+                >
                     Поэтому так важно при приемке квартиры сразу выявить все
                     дефекты <br />
                     и помощь профессионалов при этом будет незаменима. <br />
@@ -205,8 +243,14 @@
                 <div
                     class="bg-[#f4ecfa] p-[30px] max-md:pt-[60px] mt-[40px] max-lg:mt-[25px] flex items-center gap-5 rounded-[5px] relative"
                 >
-                    <img src="./public/homePage/toTopHend.png" alt="" class="max-md:absolute max-md:-top-5 left-[20px]" />
-                    <p class="text-[18px] max-md:text-base max-sm:text-sm font-medium text-[#333333]">
+                    <img
+                        src="./public/homePage/toTopHend.png"
+                        alt=""
+                        class="max-md:absolute max-md:-top-5 left-[20px]"
+                    />
+                    <p
+                        class="text-[18px] max-md:text-base max-sm:text-sm font-medium text-[#333333]"
+                    >
                         НО при несоблюдении правил приемки и составления
                         нормативно-правовых документов застройщик может выиграть
                         дело и отказать в устранении недостатков <br />и
@@ -216,7 +260,9 @@
                     </p>
                 </div>
 
-                <p class="mt-[40px] max-lg:mt-[25px] max-md:mt-[20px] text-[22px] max-lg:text-[20px] max-md:text-lg  max-sm:text-base font-medium text-[#333333]">
+                <p
+                    class="mt-[40px] max-lg:mt-[25px] max-md:mt-[20px] text-[22px] max-lg:text-[20px] max-md:text-lg max-sm:text-base font-medium text-[#333333]"
+                >
                     Ежедневно наши специалисты осуществляют
                     <span>от 7 до 15 приемок</span> квартир в день. Сумма
                     коменсации, полученных нашими клиентами,
@@ -594,7 +640,7 @@
                                 alt=""
                             />
                         </div>
-                        <ul class="mt-5">
+                        <ul class="mt-5 ">
                             <li class="flex items-center gap-5">
                                 <hr
                                     class="border-2 border-[#8859CF] w-[25px]"
@@ -1259,7 +1305,7 @@
                     Отчеты с наших приемок
                 </p>
                 <div class="w-[70%] m-auto">
-                    <div class="mt-[30px] flex justify-between gap-[30px]">
+                    <!-- <div class="mt-[30px] flex justify-between gap-[30px]">
                         <div class="bg-white rounded-[5px]">
                             <div class="h-[200px]">
                                 <img
@@ -1340,11 +1386,194 @@
                                 </p>
                             </div>
                         </div>
+                    </div> -->
+                    <div class="swiper mt-[30px]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div
+                                    class="bg-white w-fit m-auto rounded-[5px]"
+                                >
+                                    <div class="h-[200px]">
+                                        <img
+                                            src="./public/homePage/section7/1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="py-[24px] px-[20px]">
+                                        <p class="text-[22px] font-medium">
+                                            ЖК TopHILLS
+                                        </p>
+                                        <p
+                                            class="text-[18px] font-medium mt-[10px]"
+                                        >
+                                            Застройщик: INGRAD
+                                        </p>
+                                        <div
+                                            class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                        >
+                                            <p class="text-[#8859CF]">
+                                                89 дефектов на сумму 847 000р.
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="mt-[16px] text-[14px] text-[#777777]"
+                                        >
+                                            Август 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="bg-white w-fit m-auto rounded-[5px]"
+                                >
+                                    <div class="h-[200px]">
+                                        <img
+                                            src="./public/homePage/section7/2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="py-[24px] px-[20px]">
+                                        <p class="text-[22px] font-medium">
+                                            ЖК TopHILLS
+                                        </p>
+                                        <p
+                                            class="text-[18px] font-medium mt-[10px] text-[#333333]"
+                                        >
+                                            Застройщик: INGRAD
+                                        </p>
+                                        <div
+                                            class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                        >
+                                            <p class="text-[#8859CF]">
+                                                89 дефектов на сумму 847 000р.
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="mt-[16px] text-[14px] text-[#777777]"
+                                        >
+                                            Август 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="bg-white w-fit m-auto rounded-[5px]"
+                                >
+                                    <div class="h-[200px]">
+                                        <img
+                                            src="./public/homePage/section7/3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="py-[24px] px-[20px]">
+                                        <p class="text-[22px] font-medium">
+                                            ЖК TopHILLS
+                                        </p>
+                                        <p
+                                            class="text-[18px] font-medium mt-[10px]"
+                                        >
+                                            Застройщик: INGRAD
+                                        </p>
+                                        <div
+                                            class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                        >
+                                            <p class="text-[#8859CF]">
+                                                89 дефектов на сумму 847 000р.
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="mt-[16px] text-[14px] text-[#777777]"
+                                        >
+                                            Август 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="bg-white w-fit m-auto rounded-[5px]"
+                                >
+                                    <div class="h-[200px]">
+                                        <img
+                                            src="./public/homePage/section7/3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="py-[24px] px-[20px]">
+                                        <p class="text-[22px] font-medium">
+                                            ЖК TopHILLS
+                                        </p>
+                                        <p
+                                            class="text-[18px] font-medium mt-[10px]"
+                                        >
+                                            Застройщик: INGRAD
+                                        </p>
+                                        <div
+                                            class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                        >
+                                            <p class="text-[#8859CF]">
+                                                89 дефектов на сумму 847 000р.
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="mt-[16px] text-[14px] text-[#777777]"
+                                        >
+                                            Август 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="bg-white m-auto w-fit rounded-[5px]"
+                                >
+                                    <div class="h-[200px]">
+                                        <img
+                                            src="./public/homePage/section7/3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="py-[24px] px-[20px]">
+                                        <p class="text-[22px] font-medium">
+                                            ЖК TopHILLS
+                                        </p>
+                                        <p
+                                            class="text-[18px] font-medium mt-[10px]"
+                                        >
+                                            Застройщик: INGRAD
+                                        </p>
+                                        <div
+                                            class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                        >
+                                            <p class="text-[#8859CF]">
+                                                89 дефектов на сумму 847 000р.
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="mt-[16px] text-[14px] text-[#777777]"
+                                        >
+                                            Август 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-[30px] flex items-center justify-between">
                         <div class="flex items-center gap-[10px]">
-                            <img src="./public/icon/to_right.png" alt="" />
-                            <img src="./public/icon/to_left.png" alt="" />
+                            <div class="button-prev cursor-pointer">
+                                <img
+                                    src="./public/icon/to_right.png"
+                                    width="40"
+                                    height="40"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="button-next cursor-pointer">
+                                <img src="./public/icon/to_left.png" alt="" />
+                            </div>
                         </div>
                         <button class="flex items-center gap-[15px]">
                             <span class="text-[#8859CF] text-[24px] font-medium"
@@ -1369,36 +1598,65 @@
                     Отзывы о работе адвокатов по приемке
                 </p>
                 <div class="w-[70%] m-auto">
-                    <div class="mt-[30px] flex justify-between gap-[30px]">
-                        <div class="bg-white rounded-[5px]">
-                            <img
-                                src="./public/homePage/section9/otzivi.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="bg-white rounded-[5px]">
-                            <img
-                                src="./public/homePage/section9/otzivi.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="bg-white rounded-[5px]">
-                            <img
-                                src="./public/homePage/section9/otzivi.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="bg-white rounded-[5px]">
-                            <img
-                                src="./public/homePage/section9/otzivi.png"
-                                alt=""
-                            />
+                    <div class="swiper_2 mt-[30px]">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="rounded-[5px]">
+                                    <img
+                                        src="./public/homePage/section9/otzivi.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[5px]">
+                                    <img
+                                        src="./public/homePage/section9/otzivi.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[5px]">
+                                    <img
+                                        src="./public/homePage/section9/otzivi.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[5px]">
+                                    <img
+                                        src="./public/homePage/section9/otzivi.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[5px]">
+                                    <img
+                                        src="./public/homePage/section9/otzivi.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-[30px] flex items-center justify-between">
                         <div class="flex items-center gap-[10px]">
-                            <img src="./public/icon/to_right.png" alt="" />
-                            <img src="./public/icon/to_left.png" alt="" />
+                            <div class="button-prev_2 cursor-pointer">
+                                <img
+                                    src="./public/icon/to_right.png"
+                                    width="40"
+                                    height="40"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="button-next_2 cursor-pointer">
+                                <img src="./public/icon/to_left.png" alt="" />
+                            </div>
                         </div>
                         <button class="flex items-center gap-[15px]">
                             <span class="text-[#8859CF] text-[24px] font-medium"

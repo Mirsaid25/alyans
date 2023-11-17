@@ -23,24 +23,32 @@ body{
     margin:0 auto;
 }
 
-.accordion_active{
+.accordion_child{
     width: 100%;
     padding: 0 8px 8px 0;
-    height: auto;
     margin: 0 auto;
     border-bottom:rgb(180, 180, 180) solid 2px;
     cursor: pointer;
     overflow: hidden;
-    transition: 0.2s ease;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+
+.accordion_active{
+    max-height: auto;
 }
 
 .accordion_style{
+    max-height: 80px;
+}
+
+.swiper{
     width: 100%;
-    padding: 0 8px 8px 0;
-    height: 80px;
-    margin: 0 auto;
-    border-bottom:rgb(180, 180, 180) solid 2px;
-    cursor: pointer;
+    height: auto;
+}
+
+.swiper_2{
+    width: 100%;
     overflow: hidden;
-    transition: 0.2s ease;
+    height: auto;
 }
