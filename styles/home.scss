@@ -11,6 +11,7 @@
 
 body{
     color: #333333;
+    // background-color: #26124563;
 }
 
 .container_first{
@@ -39,3 +40,14 @@ body{
     overflow: hidden;
     height: auto;
 }
+
+.modal{
+    transition: 0.3s ease-in-out;
+}
+// #modal_checkbox{
+//     // opacity: 0;
+//     z-index: -10;
+//     background-color: antiquewhite;
+//     border: none !important;
+//     border-radius: 8px;
+// }

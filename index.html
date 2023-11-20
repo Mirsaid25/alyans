@@ -22,6 +22,7 @@
             <div class="flex justify-between max-lg:items-center">
                 <img
                     src="/homePage/icon/бургер.png"
+                    id="menu_open"
                     class="w-5 h-5 max-sm:w-4 max-sm:h-4 hidden max-lg:block cursor-pointer"
                     alt=""
                 />
@@ -98,7 +99,7 @@
                         >+7 (499) 112-06-08</a
                     >
                     <button
-                        class="bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
+                        class="modal_open bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
                     >
                         Заказать звонок
                     </button>
@@ -106,7 +107,7 @@
 
                 <img
                     src="/icon/call-icon.png"
-                    class="w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block"
+                    class="modal_open w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block"
                     alt=""
                 />
             </div>
@@ -164,7 +165,161 @@
             </div>
         </header>
 
+        <div
+            class="burger_menu hidden fixed top-0 left-0 h-screen w-full bg-white z-50 transition duration-300 ease-out p-[30px] pt-[100px]"
+        >
+            <img
+                src="/icon/close-icon.svg"
+                width="20"
+                id="menu_close"
+                height="20"
+                alt="close"
+                class="absolute top-[40px] left-5 cursor-pointer max-sm:w-[15px] max-sm:h-[15px]"
+            />
+            <select
+                title="city"
+                id="cars"
+                class="w-full px-[16px] py-3 text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+            >
+                <option value="moskow" selected>Москва</option>
+                <option value="moskow">Москва</option>
+                <option value="moskow">Москва</option>
+                <option value="moskow">Москва</option>
+            </select>
+            <div
+                class="mt-[30px] flex flex-col items-center gap-5 decoration-dashed text-[18px] font-[500] text-[#333333] uppercase"
+            >
+                <a href="#">
+                    <span>Услуги</span>
+                </a>
+
+                <a href="#">
+                    <span>Отчёты </span>
+                </a>
+
+                <a href="#">
+                    <span>Цены</span>
+                </a>
+
+                <a href="#">
+                    <span>Статьи</span>
+                </a>
+
+                <a href="#">
+                    <span>О нас</span>
+                </a>
+
+                <a href="#">
+                    <span>Контакты</span>
+                </a>
+            </div>
+            <div class="mt-[50px] flex flex-col gap-3">
+                <a
+                    class="text-[18px] font-medium text-center text-[#333333] decoration-dashed"
+                    href="tel:+7(499)112-06-08"
+                    >+7 (499) 112-06-08</a
+                >
+                <button
+                    class="w-fit m-auto modal_open bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
+                >
+                    Заказать звонок
+                </button>
+            </div>
+            <div class="flex w-fit items-center gap-[10px] mt-[50px] m-auto">
+                <a href="#">
+                    <img src="/icon/watsUp.svg" alt="" class="w-[32px] h-[32px]"/>
+                </a>
+                <a href="#">
+                    <img src="/icon/тг.svg" alt="" class="w-[32px] h-[32px]"/>
+                </a>
+                <a href="#">
+                    <img src="/icon/почта.svg" alt="" class="w-[32px] h-[32px]"/>
+                </a>
+                <a href="#">
+                    <img src="/icon/вк.svg" alt="" class="w-[32px] h-[32px]"/>
+                </a>
+            </div>
+        </div>
+
         <main>
+            <div
+                class="modal hidden fixed top-0 left-0 h-screen w-full bg-[#26124570] z-50 transition duration-300 ease-out"
+            >
+                <div
+                    class="bg-white max-w-[540px] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-[65px] max-lg:p-[40px] max-md:p-[30px] max-sm:p-5 max-sm:pt-10 rounded-[5px]"
+                >
+                    <img
+                        src="/icon/close-icon.svg"
+                        width="20"
+                        id="modal_close"
+                        height="20"
+                        alt="close"
+                        class="absolute top-5 right-5 cursor-pointer max-sm:w-[15px] max-sm:h-[15px]"
+                    />
+                    <p
+                        class="text-4xl max-lg:text-3xl max-md:text-2xl font-extrabold text-center"
+                    >
+                        Обратный звонок
+                    </p>
+                    <p
+                        class="mt-5 text-lg max-lg:text-base max-md:text-sm max-lg:mt-3 font-medium text-center"
+                    >
+                        Остались вопросы? Мы перезвоним вам абсолютно бесплатно
+                        в течение 10 минут.
+                    </p>
+
+                    <form
+                        action="#"
+                        class="mt-[30px] w-full max-lg:mt-[15px] flex items-center flex-col"
+                    >
+                        <div
+                            class="max-sm:w-full max-md:w-[80%] flex max-md:flex-col items-center max-md:items-start gap-5"
+                        >
+                            <input
+                                type="text"
+                                required
+                                placeholder="Ваше имя"
+                                class="p-[13px] rounded-[10px] bg-[#F4ECFA] w-full"
+                            />
+                            <input
+                                type="tel"
+                                required
+                                placeholder="Телефон"
+                                class="p-[13px] rounded-[10px] bg-[#F4ECFA] w-full"
+                            />
+                        </div>
+                        <div
+                            class="mt-5 max-md:w-[80%] max-sm:w-full flex gap-[10px]"
+                        >
+                            <input
+                                required
+                                title="checkbox"
+                                id="modal_checkbox"
+                                type="checkbox"
+                                class="w-[24px] h-[24px] bg-[#F4ECFA]"
+                            />
+                            <p
+                                class="text-[14px] max-md:text-xs text-[#777777]"
+                            >
+                                Нажимая на кнопку «ОТПРАВИТЬ ЗАЯВКУ» я
+                                соглашаюсь c
+                                <a href="#" class="text-[#8859CF]"
+                                    >Пользовательским соглашением </a
+                                >и
+                                <a href="#" class="text-[#8859CF]"
+                                    >Положением о персональных данных</a
+                                >
+                            </p>
+                        </div>
+                        <button
+                            class="bg-[#F6943B] px-3 py-5 max-lg:py-3 text-white rounded-[10px] w-full max-w-[270px] mt-5 max-lg:mt-3"
+                        >
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+
             <section
                 class="w-full h-[720px] max-xl:h-[620px] max-lg:h-[480px] max-md:h-[390px] max-sm:h-[350px] bg-[url('/homePage/image/section1.jpg')] bg-center bg-no-repeat bg-cover pt-[220px] max-xl:pt-[250px] max-lg:pt-[100px] max-md:pt-[90px] max-sm:pt-[70px] relative"
             >
@@ -187,7 +342,7 @@
                     </p>
 
                     <button
-                        class="mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] bg-[#f6943b] px-[30px] py-[16px] max-xl:py-[12px] max-md:px-[15px] max-md:py-[8px] rounded-[10px] font-medium text-[18px] text-white max-lg:text-base max-md:text-sm"
+                        class="modal_open mt-[35px] max-xl:mt-[25px] max-lg:mt-[15px] max-md:mt-[10px] bg-[#f6943b] px-[30px] py-[16px] max-xl:py-[12px] max-md:px-[15px] max-md:py-[8px] rounded-[10px] font-medium text-[18px] text-white max-lg:text-base max-md:text-sm"
                     >
                         Получить консультацию
                     </button>
@@ -331,7 +486,7 @@
                                 </p>
                             </div>
                             <button
-                                class="mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
+                                class="modal_open mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
                             >
                                 Заказать приемку
                             </button>
@@ -380,7 +535,7 @@
                                 </p>
                             </div>
                             <button
-                                class="mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
+                                class="modal_open mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
                             >
                                 Заказать приемку
                             </button>
@@ -429,7 +584,7 @@
                                 </p>
                             </div>
                             <button
-                                class="mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
+                                class="modal_open mt-[35px] max-xl:mt-[20px] bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[10px] max-xl:py-[7px] rounded-[10px] font-semibold max-xl:text-sm text-white"
                             >
                                 Заказать приемку
                             </button>
@@ -575,7 +730,7 @@
                                     4 900 <span class="text-[18px]">руб.</span>
                                 </p>
                                 <button
-                                    class="bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[15px] max-xl:py-[10px] font-medium text-white rounded-[10px] max-sm:w-full"
+                                    class="modal_open bg-[#f6943b] px-[20px] py-[12px] max-xl:px-[15px] max-xl:py-[10px] font-medium text-white rounded-[10px] max-sm:w-full"
                                 >
                                     Заказать приемку
                                 </button>
@@ -2346,9 +2501,12 @@
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="bg-[#444444] py-[50px]">
-                <div class="w-[70%] max-w-[1110px] max-md:w-[80%] max-sm:w-[90%] m-auto flex justify-between gap-10 max-md:flex-col">
+                <div
+                    class="w-[70%] max-w-[1110px] max-md:w-[80%] max-sm:w-[90%] m-auto flex justify-between gap-10 max-md:flex-col"
+                >
                     <div>
                         <ul
                             class="text-white flex gap-5 text-[18px] font-medium max-xl:hidden"
@@ -2446,7 +2604,9 @@
                     class="w-[70%] max-w-[1110px] max-md:w-[80%] max-sm:w-[90%] m-auto flex justify-between text-[14px] text-[#AEAEAE] max-xl:flex-col max-xl:items-center max-xl:gap-5 max-sm:items-start"
                 >
                     <p class="">©АЛЬЯНС</p>
-                    <div class="flex items-center max-sm:flex-col max-sm:items-start gap-5">
+                    <div
+                        class="flex items-center max-sm:flex-col max-sm:items-start gap-5"
+                    >
                         <a href="#">Политика обработки персональных данных</a>
                         <a href="#">Политика конфиденциальности</a>
                         <a href="#">Пользовательское соглашение</a>
