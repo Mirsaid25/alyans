@@ -10,13 +10,16 @@ accordion.forEach((el) => {
 			document.querySelectorAll(".content").forEach((el)=> el.style.maxHeight = null)
 			icon.style.transform = "rotate(0deg)"
 			text.style.color = "#333333"
+			content.style.marginBottom = "0px"
 		}else{
-			document.querySelectorAll(".content").forEach((el)=> el.style.maxHeight = null)
+			content.style.marginBottom = "30px"
+            document.querySelectorAll(".content").forEach((el)=> el.style.maxHeight = null)
 			document.querySelectorAll(".accordion_icon").forEach((el)=> el.style.transform = "rotate(0deg)")
 			document.querySelectorAll(".accordion_text").forEach((el)=> el.style.color = "#333333")
 			text.style.color = "#8859CF"
 			content.style.maxHeight = content.scrollHeight + "px"
 			icon.style.transform = "rotate(180deg)"
+            
 		}
 	});
 });
