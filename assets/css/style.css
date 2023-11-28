@@ -43,3 +43,16 @@ body{
 .modal{
     transition: 0.3s ease-in-out;
 }
+
+/* ******************** reportsPage ************************ */
+
+.active{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #8859CF;
+    border-radius: 100%;
+}

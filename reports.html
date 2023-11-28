@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <title>Отчёты</title>
+    </head>
+    <body>
+        <header
+            class="absolute top-0 left-1/2 shadow-lg shadow-[#9959CF15] -translate-x-1/2 w-[1170px] max-xl:w-[80%] max-sm:w-full p-[30px] m-auto bg-white rounded-b-[5px] max-sm:rounded-none z-10 h-auto max-xl:py-[20px] max-lg:py-[10px] max-sm:py-[5px] max-sm:px-10"
+        >
+            <div class="flex justify-between max-lg:items-center">
+                <img
+                    src="./assets/img/homePage/icon/burger.svg"
+                    id="menu_open"
+                    class="w-5 h-5 max-sm:w-4 max-sm:h-4 hidden max-lg:block cursor-pointer"
+                    alt=""
+                />
+
+                <a href="/">
+                    <img
+                        src="./assets/img/logo.svg"
+                        width="285"
+                        height="90"
+                        alt=""
+                        class="max-xl:w-[250px] max-xl:h-[80px] max-lg:w-[170px] max-lg:h-[50px] max-sm:w-[140px] max-sm:h-[40px]"
+                    />
+                </a>
+
+                <div class="flex flex-col gap-5 max-xl:hidden">
+                    <div class="flex items-center justify-between">
+                        <select
+                            title="city"
+                            id="cars"
+                            class="w-[145px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                        >
+                            <option value="moskow" selected>Москва</option>
+                            <option value="moskow">Москва</option>
+                            <option value="moskow">Москва</option>
+                            <option value="moskow">Москва</option>
+                        </select>
+
+                        <div class="flex items-center gap-[5px]">
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/whatsapp-icon.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/tg-icon.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/gmail-icon.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/vk-icon.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-[15px] decoration-dashed text-[18px] font-[500] text-[#333333] uppercase"
+                    >
+                        <a class="text-[#CCCCCC] cursor-no-drop">
+                            <span>Услуги</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Отчёты </span>
+                        </a>
+
+                        <a href="#">
+                            <span>Цены</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Статьи</span>
+                        </a>
+
+                        <a href="#">
+                            <span>О нас</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Контакты</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5 max-xl:gap-2 max-lg:hidden">
+                    <a
+                        class="text-[18px] font-normal text-[#333333] decoration-dashed"
+                        href="tel:+7(499)112-06-08"
+                        >+7 (499) 112-06-08</a
+                    >
+                    <button
+                        class="modal_open bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
+                    >
+                        Заказать звонок
+                    </button>
+                </div>
+
+                <img
+                    src="./assets/img/icon/call-icon.svg"
+                    class="modal_open w-[35px] h-[35px] max-sm:h-[25px] max-sm:w-[25px] hidden max-lg:block"
+                    alt=""
+                />
+            </div>
+
+            <div
+                class="w-[500px] m-auto flex-col mt-3 gap-5 max-xl:gap-2 hidden max-xl:flex max-lg:hidden"
+            >
+                <div class="flex items-center justify-between">
+                    <select
+                        title="city"
+                        id="cars"
+                        class="w-[145px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                    >
+                        <option value="moskow" selected>Москва</option>
+                        <option value="moskow">Москва</option>
+                        <option value="moskow">Москва</option>
+                        <option value="moskow">Москва</option>
+                    </select>
+
+                    <div class="flex items-center gap-[5px]">
+                        <a href="#">
+                            <img
+                                src="./assets/img/icon/whatsapp-icon.svg"
+                                alt=""
+                            />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon/tg-icon.svg" alt="" />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="./assets/img/icon/gmail-icon.svg"
+                                alt=""
+                            />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon/vk-icon.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center justify-center gap-[15px] decoration-dashed text-[18px] font-extrabold text-[#333333] uppercase max-xl:text-[17px] max-xl:gap-[10px] max-xl:font-bold"
+                >
+                    <a href="#">
+                        <span>Услуги</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Отчёты </span>
+                    </a>
+
+                    <a href="#">
+                        <span>Цены</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Статьи</span>
+                    </a>
+
+                    <a href="#">
+                        <span>О нас</span>
+                    </a>
+
+                    <a href="#">
+                        <span>Контакты</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div
+            class="burger_menu hidden fixed top-0 left-0 h-screen w-full bg-white z-50 transition duration-300 ease-out p-[30px] pt-[100px]"
+        >
+            <img
+                src="./assets/img/icon/close-icon.svg"
+                width="20"
+                id="menu_close"
+                height="20"
+                alt="close"
+                class="absolute top-[40px] left-5 cursor-pointer max-sm:w-[15px] max-sm:h-[15px]"
+            />
+            <select
+                title="city"
+                id="cars"
+                class="w-full px-[16px] py-3 text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+            >
+                <option value="moskow" selected>Москва</option>
+                <option value="moskow">Москва</option>
+                <option value="moskow">Москва</option>
+                <option value="moskow">Москва</option>
+            </select>
+            <div
+                class="mt-[30px] flex flex-col items-center gap-5 decoration-dashed text-[18px] font-[500] text-[#333333] uppercase"
+            >
+                <a href="#">
+                    <span>Услуги</span>
+                </a>
+
+                <a href="#">
+                    <span>Отчёты </span>
+                </a>
+
+                <a href="#">
+                    <span>Цены</span>
+                </a>
+
+                <a href="#">
+                    <span>Статьи</span>
+                </a>
+
+                <a href="#">
+                    <span>О нас</span>
+                </a>
+
+                <a href="#">
+                    <span>Контакты</span>
+                </a>
+            </div>
+            <div class="mt-[50px] flex flex-col gap-3">
+                <a
+                    class="text-[18px] font-medium text-center text-[#333333] decoration-dashed"
+                    href="tel:+7(499)112-06-08"
+                    >+7 (499) 112-06-08</a
+                >
+                <button
+                    class="w-fit m-auto modal_open bg-[#f6943b] px-5 py-3 rounded-[10px] font-[600] text-white"
+                >
+                    Заказать звонок
+                </button>
+            </div>
+            <div class="flex w-fit items-center gap-[10px] mt-[50px] m-auto">
+                <a href="#">
+                    <img
+                        src="./assets/img/icon/whatsapp-icon.svg"
+                        alt=""
+                        class="w-[32px] h-[32px]"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="./assets/img/icon/tg-icon.svg"
+                        alt=""
+                        class="w-[32px] h-[32px]"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="./assets/img/icon/gmail-icon.svg"
+                        alt=""
+                        class="w-[32px] h-[32px]"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="./assets/img/icon/vk-icon.svg"
+                        alt=""
+                        class="w-[32px] h-[32px]"
+                    />
+                </a>
+            </div>
+        </div>
+
+        <main>
+            <div
+                class="modal hidden fixed top-0 left-0 h-screen w-full bg-[#26124570] z-50 transition duration-300 ease-out"
+            >
+                <div
+                    class="bg-white max-w-[540px] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-[65px] max-lg:p-[40px] max-md:p-[30px] max-sm:p-5 max-sm:pt-10 rounded-[5px]"
+                >
+                    <img
+                        src="./assets/img/icon/close-icon.svg"
+                        width="20"
+                        id="modal_close"
+                        height="20"
+                        alt="close"
+                        class="absolute top-5 right-5 cursor-pointer max-sm:w-[15px] max-sm:h-[15px]"
+                    />
+                    <p
+                        class="text-4xl max-lg:text-3xl max-md:text-2xl font-extrabold text-center"
+                    >
+                        Обратный звонок
+                    </p>
+                    <p
+                        class="mt-5 text-lg max-lg:text-base max-md:text-sm max-lg:mt-3 font-medium text-center"
+                    >
+                        Остались вопросы? Мы перезвоним вам абсолютно бесплатно
+                        в течение 10 минут.
+                    </p>
+
+                    <form
+                        action="#"
+                        class="mt-[30px] w-full max-lg:mt-[15px] flex items-center flex-col"
+                    >
+                        <div
+                            class="max-sm:w-full max-md:w-[80%] flex max-md:flex-col items-center max-md:items-start gap-5"
+                        >
+                            <input
+                                type="text"
+                                required
+                                placeholder="Ваше имя"
+                                class="p-[13px] rounded-[10px] bg-[#F4ECFA] w-full"
+                            />
+                            <input
+                                type="tel"
+                                required
+                                placeholder="Телефон"
+                                class="p-[13px] rounded-[10px] bg-[#F4ECFA] w-full"
+                            />
+                        </div>
+                        <div
+                            class="mt-5 max-md:w-[80%] max-sm:w-full flex gap-[10px]"
+                        >
+                            <input
+                                required
+                                title="checkbox"
+                                id="modal_checkbox"
+                                type="checkbox"
+                                class="w-[24px] h-[24px] bg-[#F4ECFA]"
+                            />
+                            <p
+                                class="text-[14px] max-md:text-xs text-[#777777]"
+                            >
+                                Нажимая на кнопку «ОТПРАВИТЬ ЗАЯВКУ» я
+                                соглашаюсь c
+                                <a href="#" class="text-[#8859CF]"
+                                    >Пользовательским соглашением </a
+                                >и
+                                <a href="#" class="text-[#8859CF]"
+                                    >Положением о персональных данных</a
+                                >
+                            </p>
+                        </div>
+                        <button
+                            class="bg-[#F6943B] px-3 py-5 max-lg:py-3 text-white rounded-[10px] w-full max-w-[270px] mt-5 max-lg:mt-3"
+                        >
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <section
+                class="max-w-[1110px] w-[70%] max-md:w-[80%] max-sm:w-[90%] m-auto mt-[190px] max-xl:mt-[240px] max-lg:mt-[100px] max-sm:mt-[70px]"
+            >
+                <div class="flex items-center text-[14px] font-medium gap-2">
+                    <a href="/">Главная</a>
+                    •
+                    <a href="/">Отчёты</a>
+                </div>
+                <h1
+                    class="text-5xl max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-extrabold mt-[28px] max-lg:mt-[15px] max-sm:mt-[10px]"
+                >
+                    Отчеты по приемкам квартир
+                </h1>
+            </section>
+
+            <section
+                class="max-w-[1100px] max-xl:max-w-[1000px] max-lg:max-w-[700px] max-md:max-w-[600px] m-auto mt-[40px] max-sm:mt-[30px]"
+            >
+                <div class="flex flex-wrap px-5 items-center max-sm:justify-center gap-5 max-sm:gap-3">
+                    <select
+                        title="any"
+                        class="w-[240px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                        title="Выберите застройщика"
+                    >
+                        <option value="moskow" selected>
+                            Выберите застройщика
+                        </option>
+                    </select>
+                    <select
+                        title="any"
+                        class="w-[240px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                        title="Жилой комплекс"
+                    >
+                        <option value="moskow" selected>Жилой комплекс</option>
+                    </select>
+                    <select
+                        title="any"
+                        class="w-[240px] p-[10px] text-[14px] rounded-[10px] border-solid border-[#efe3f8] border-2"
+                        title="Выберите застройщика"
+                    >
+                        <option value="moskow" selected>Тип</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-[30px] max-sm:gap-5 mt-[40px] max-sm:mt-[30px]">
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div class="bg-white w-fit m-auto rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p class="text-[18px] font-medium mt-[10px]">
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div class="bg-white w-fit m-auto rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px] text-[#333333]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div class="bg-white w-fit m-auto rounded-[5px]">
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p class="text-[18px] font-medium mt-[10px]">
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p class="mt-[16px] text-[14px] text-[#777777]">
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px] text-[#333333]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px] text-[#333333]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide border border-[#F4ECFA] w-fit m-auto rounded-[5px] hover:shadow-lg hover:shadow-[#9959CF15]">
+                        <div
+                            class="bg-white w-fit m-auto rounded-[5px]"
+                        >
+                            <div class="h-[200px]">
+                                <img
+                                    src="./assets/img/homePage/section7/3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="py-[24px] px-[20px]">
+                                <p class="text-[22px] font-medium">
+                                    ЖК TopHILLS
+                                </p>
+                                <p
+                                    class="text-[18px] font-medium mt-[10px]"
+                                >
+                                    Застройщик: INGRAD
+                                </p>
+                                <div
+                                    class="bg-[#F4ECFA] py-[8px] px-[16px] mt-[20px] rounded-[10px]"
+                                >
+                                    <p class="text-[#8859CF]">
+                                        89 дефектов на сумму 847 000р.
+                                    </p>
+                                </div>
+                                <p
+                                    class="mt-[16px] text-[14px] text-[#777777]"
+                                >
+                                    Август 2023
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-10 max-lg:gap-8 w-fit m-auto mt-[40px]">
+                    <div class="cursor-pointer">
+                        <img
+                            src="./assets/img/icon/to_right.svg"
+                            width="40"
+                            height="40"
+                            alt=""
+                            class="max-sm:w-[30px] max-sm:h-[30px]"
+                        />
+                    </div>
+                    <div class="flex items-center gap-5 text-lg font-medium text-[#8859CF]">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="max-sm:hidden">4</a>
+                        <a href="#" class="max-sm:hidden">5</a>
+                        <a href="#">...</a>
+                        <a href="#">12</a>
+                    </div>
+                    <div class="cursor-pointer">
+                        <img
+                            src="./assets/img/icon/to_left.svg"
+                            alt=""
+                            class="max-sm:w-[30px] max-sm:h-[30px]"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="contact"
+                class="py-[80px] max-xl:py-[70px] max-lg:py-[50px] bg-gradient-to-r from-[#8859cf] to-[#a959cf] mt-[100px]"
+            >
+                <div
+                    class="flex items-center justify-center gap-[70px] max-lg:gap-[40px] max-md:flex-col max-md:gap-[50px]"
+                >
+                    <div class="">
+                        <p
+                            class="text-[42px] max-xl:text-3xl max-md:text-2xl font-medium text-white"
+                        >
+                            Контакты
+                        </p>
+                        <p
+                            class="text-[18px] max-md:text-base text-white mt-[10px]"
+                        >
+                            Остались вопросы? <br />
+                            Напишите или позвоните нам!
+                        </p>
+                        <div
+                            class="bg-white w-[330px] px-[30px] py-[40px] max-md:px-5 max-md:py-7 mt-[30px] rounded-[5px]"
+                        >
+                            <form class="flex flex-col gap-[10px]" action="#">
+                                <input
+                                    type="text"
+                                    placeholder="Ваше имя"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                />
+                                <input
+                                    type="tel"
+                                    placeholder="Телефон"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                />
+                                <textarea
+                                    type="text"
+                                    placeholder="Сообщение"
+                                    class="p-[13px] w-full rounded-[10px] bg-[#F4ECFA]"
+                                ></textarea>
+                                <button
+                                    class="bg-[#F6943B] py-3 text-center rounded-[10px] font-semibold text-white"
+                                >
+                                    Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="text-[14px] text-white">Телефон:</p>
+                            <a
+                                href="tel:+7(499)113-79-58"
+                                class="text-[22px] max-sm:text-lg font-medium text-white"
+                                >+7 (499) 113-79-58</a
+                            >
+                        </div>
+                        <div class="mt-[40px]">
+                            <p class="text-[14px] text-white">Почта:</p>
+                            <p
+                                class="text-[22px] max-sm:text-lg font-medium text-white"
+                            >
+                                info@alliance-advokatov.ru
+                            </p>
+                        </div>
+                        <div class="mt-[40px]">
+                            <ul class="text-white font-medium max-sm:text-sm">
+                                <li>
+                                    <p>Одесская 2 (БЦ "Лотос")</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>
+                                        Ог. Москва, Уланский переулок, д. 11 а
+                                    </p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, ул. Новаторов, 38, корп. 3</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, Люблинская ул., 40</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, Можайское ш., 25</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>г. Москва, ул. Михайлова, 43</p>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <p>
+                                        г. Москва, площадь Тверская Застава, 3
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="bg-[#444444] py-[50px]">
+                <div
+                    class="w-[70%] max-w-[1110px] max-md:w-[80%] max-sm:w-[90%] m-auto flex justify-between gap-10 max-md:flex-col"
+                >
+                    <div>
+                        <ul
+                            class="text-white flex gap-5 text-[18px] font-medium max-xl:hidden"
+                        >
+                            <li>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Отчёты</a>
+                            </li>
+                            <li>
+                                <a href="#">Цены</a>
+                            </li>
+                            <li>
+                                <a href="#">Статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="justify-start gap-20 hidden max-xl:flex">
+                            <ul
+                                class="text-white flex flex-col gap-5 text-[18px] max-md:text-base max-sm:text-sm font-medium"
+                            >
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отчёты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Цены</a>
+                                </li>
+                            </ul>
+                            <ul
+                                class="text-white flex flex-col gap-5 text-[18px] max-md:text-base max-sm:text-sm font-medium"
+                            >
+                                <li>
+                                    <a href="#">Статьи</a>
+                                </li>
+                                <li>
+                                    <a href="#">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-[30px]">
+                            <ul class="text-[#CACACA] max-sm:text-sm">
+                                <li>Приемка квартиры с отделкой</li>
+                                <li class="mt-5">
+                                    Приёмка квартиры без отделки
+                                </li>
+                                <li class="mt-5">
+                                    Приемка квартиры с предчистовой отделкой
+                                </li>
+                                <li class="mt-5">
+                                    Взыскание с застройщика за недостатки
+                                    квартиры
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a
+                            href="tel:+7(499)113-79-58"
+                            class="text-[22px] max-sm:text-lg font-medium text-white"
+                        >
+                            +7 (499) 113-79-58
+                        </a>
+                        <p class="mt-[10px] max-sm:text-sm text-[#CACACA]">
+                            info@alliance-advokatov.ru
+                        </p>
+                        <p class="mt-[10px] max-sm:text-sm text-[#CACACA]">
+                            г. Москва, ул. Михайлова, 43 <br />
+                            г. Москва, площадь Тверская Застава, 3
+                        </p>
+                        <div class="flex items-center gap-[10px] mt-5">
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/tg-icon_2.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/img/icon/wiber-icon.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#333333] py-[40px]">
+                <div
+                    class="w-[70%] max-w-[1110px] max-md:w-[80%] max-sm:w-[90%] m-auto flex justify-between text-[14px] text-[#AEAEAE] max-xl:flex-col max-xl:items-center max-xl:gap-5 max-sm:items-start"
+                >
+                    <p class="">©АЛЬЯНС</p>
+                    <div
+                        class="flex items-center max-sm:flex-col max-sm:items-start gap-5"
+                    >
+                        <a href="#">Политика обработки персональных данных</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module" src="./assets/services.js"></script>
+    </body>
+</html>
