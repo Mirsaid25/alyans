@@ -56,3 +56,10 @@ body{
     background-color: #8859CF;
     border-radius: 100%;
 }
+
+/* map */
+
+#map [class*="ground-pane"]{
+    /* filter: hue-rotate(900deg); */
+    filter: grayscale(90%);
+}

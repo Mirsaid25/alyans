@@ -5,7 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>       
+        <script src="https://cdn.tailwindcss.com"></script>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -14,7 +14,7 @@
     </head>
     <body>
         <header
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-[1170px] max-xl:w-[80%] max-sm:w-full p-[30px] m-auto bg-white rounded-b-[5px] max-sm:rounded-none z-10 h-auto max-xl:py-[20px] max-lg:py-[10px] max-sm:py-[5px] max-sm:px-10"
+            class="absolute top-0 left-1/2 shadow-lg shadow-[#9959CF15] -translate-x-1/2 w-[1170px] max-xl:w-[80%] max-sm:w-full p-[30px] m-auto bg-white rounded-b-[5px] max-sm:rounded-none z-10 h-auto max-xl:py-[20px] max-lg:py-[10px] max-sm:py-[5px] max-sm:px-10"
         >
             <div class="flex justify-between max-lg:items-center">
                 <img
@@ -49,29 +49,65 @@
 
                         <div class="flex items-center gap-[5px]">
                             <a href="#">
-                                <img src="./assets/img/icon/whatsapp-icon.svg" alt="" />
+                                <img
+                                    src="./assets/img/icon/whatsapp-icon.svg"
+                                    alt=""
+                                />
                             </a>
                             <a href="#">
-                                <img src="./assets/img/icon/tg-icon.svg" alt="" />
+                                <img
+                                    src="./assets/img/icon/tg-icon.svg"
+                                    alt=""
+                                />
                             </a>
                             <a href="#">
-                                <img src="./assets/img/icon/gmail-icon.svg" alt="" />
+                                <img
+                                    src="./assets/img/icon/gmail-icon.svg"
+                                    alt=""
+                                />
                             </a>
                             <a href="#">
-                                <img src="./assets/img/icon/vk-icon.svg" alt="" />
+                                <img
+                                    src="./assets/img/icon/vk-icon.svg"
+                                    alt=""
+                                />
                             </a>
                         </div>
                     </div>
                     <div
                         class="flex items-center gap-[15px] decoration-dashed text-[18px] font-[500] text-[#333333] uppercase"
                     >
-                        <a href="#">
+                        <a class="text-[#CCCCCC] cursor-no-drop">
                             <span>Услуги</span>
                         </a>
 
-                        <a href="#">
+                        <div
+                            class="cursor-pointer flex items-center gap-2 relative"
+                        >
                             <span>Отчёты </span>
-                        </a>
+                            <img
+                                src="assets/img/icon/to_bottom.svg"
+                                class="rotate-180"
+                                alt=""
+                            />
+
+                            <div
+                                class="w-[350px] font-semibold text-[14px] absolute -left-5 -bottom-[120px] p-[10px] bg-white rounded-[10px] shadow-xl shadow-[#9959CF15]"
+                            >
+                                <a
+                                    href="#"
+                                    class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] block"
+                                >
+                                    <p>Отчет по приемкам квартир</p>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] mt-[10px] block"
+                                >
+                                    <p>Отчет по взысканиям за недостатки</p>
+                                </a>
+                            </div>
+                        </div>
 
                         <a href="#">
                             <span>Цены</span>
@@ -128,13 +164,19 @@
 
                     <div class="flex items-center gap-[5px]">
                         <a href="#">
-                            <img src="./assets/img/icon/whatsapp-icon.svg" alt="" />
+                            <img
+                                src="./assets/img/icon/whatsapp-icon.svg"
+                                alt=""
+                            />
                         </a>
                         <a href="#">
                             <img src="./assets/img/icon/tg-icon.svg" alt="" />
                         </a>
                         <a href="#">
-                            <img src="./assets/img/icon/gmail-icon.svg" alt="" />
+                            <img
+                                src="./assets/img/icon/gmail-icon.svg"
+                                alt=""
+                            />
                         </a>
                         <a href="#">
                             <img src="./assets/img/icon/vk-icon.svg" alt="" />
@@ -143,15 +185,39 @@
                 </div>
 
                 <div
-                    class="flex items-center justify-center gap-[15px] decoration-dashed text-[18px] font-extrabold text-[#333333] uppercase max-xl:text-[17px] max-xl:gap-[10px] max-xl:font-bold"
+                    class="flex items-center justify-center gap-[15px] decoration-dashed text-[18px] font-medium text-[#333333] uppercase max-xl:text-[17px] max-xl:gap-[10px]"
                 >
                     <a href="#">
                         <span>Услуги</span>
                     </a>
 
-                    <a href="#">
+                    <div
+                        class="cursor-pointer flex items-center gap-2 relative"
+                    >
                         <span>Отчёты </span>
-                    </a>
+                        <img
+                            src="assets/img/icon/to_bottom.svg"
+                            class="rotate-180"
+                            alt=""
+                        />
+
+                        <div
+                            class="w-[350px] font-semibold text-[14px] absolute -left-5 -bottom-[120px] p-[10px] bg-white rounded-[10px] shadow-xl shadow-[#9959CF15]"
+                        >
+                            <a
+                                href="#"
+                                class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] block"
+                            >
+                                <p>Отчет по приемкам квартир</p>
+                            </a>
+                            <a
+                                href="#"
+                                class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] mt-[10px] block"
+                            >
+                                <p>Отчет по взысканиям за недостатки</p>
+                            </a>
+                        </div>
+                    </div>
 
                     <a href="#">
                         <span>Цены</span>
@@ -200,9 +266,31 @@
                     <span>Услуги</span>
                 </a>
 
-                <a href="#">
+                <div class="cursor-pointer flex items-center gap-2 relative">
                     <span>Отчёты </span>
-                </a>
+                    <img
+                        src="assets/img/icon/to_bottom.svg"
+                        class="rotate-180"
+                        alt=""
+                    />
+
+                    <div
+                        class="w-[350px] font-semibold text-[14px] absolute left-1/2 -translate-x-1/2 -bottom-[110px] p-[10px] bg-white rounded-[10px] shadow-xl shadow-[#9959CF15]"
+                    >
+                        <a
+                            href="#"
+                            class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] block"
+                        >
+                            <p>Отчет по приемкам квартир</p>
+                        </a>
+                        <a
+                            href="#"
+                            class="p-[10px] rounded-[5px] hover:bg-[#F4ECFA] mt-[10px] block"
+                        >
+                            <p>Отчет по взысканиям за недостатки</p>
+                        </a>
+                    </div>
+                </div>
 
                 <a href="#">
                     <span>Цены</span>
@@ -1777,7 +1865,6 @@
                             Если застройщик не устранит недостатки <br />
                             в срок — взыщем компенсацию через суд!
                         </p>
-
                     </div>
                     <div
                         class="bg-white max-w-[440px] max-lg:max-w-[470px] max-sm:max-w-[360px] mx-auto z-1 relative lg:-mt-16 max-lg:-mt-1 p-[20px_30px_25px] max-sm:px-[20px] rounded-[5px]"
@@ -1793,7 +1880,10 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="#contact" class="inline-flex mt-[30px] bg-[#F6943B] px-[30px] py-[16px] max-lg:px-[20px] max-lg:py-[10px] rounded-[10px] text-[18px] max-md:text-base font-medium text-white">
+                    <a
+                        href="#contact"
+                        class="inline-flex mt-[30px] bg-[#F6943B] px-[30px] py-[16px] max-lg:px-[20px] max-lg:py-[10px] rounded-[10px] text-[18px] max-md:text-base font-medium text-white"
+                    >
                         Получить консультацию
                     </a>
                 </div>
@@ -2624,10 +2714,16 @@
                         </p>
                         <div class="flex items-center gap-[10px] mt-5">
                             <a href="#">
-                                <img src="./assets/img/icon/tg-icon_2.svg" alt="" />
+                                <img
+                                    src="./assets/img/icon/tg-icon_2.svg"
+                                    alt=""
+                                />
                             </a>
                             <a href="#">
-                                <img src="./assets/img/icon/wiber-icon.png" alt="" />
+                                <img
+                                    src="./assets/img/icon/wiber-icon.png"
+                                    alt=""
+                                />
                             </a>
                         </div>
                     </div>
@@ -2650,6 +2746,6 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script type="module" src="./assets/main.js "></script>
+        <script type="module" src="./assets/main.js"></script>
     </body>
 </html>

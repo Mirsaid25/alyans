@@ -2,6 +2,7 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const swiper = new Swiper(".swiper", {
     speed: 400,
+    loop:true,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -94,73 +95,26 @@ nextButton.addEventListener("click", function (e) {
 
 // for(let item of swiperChilds){
 
-const swiper2 = new Swiper(".swiperChild_1", {
-    speed: 400,
-    navigation: {
-    	nextEl: '.button-next_child_1',
-    	prevEl: '.button-prev_child_1',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-    },
-});
 
-const swiper3 = new Swiper(".swiperChild_2", {
-    speed: 400,
-    navigation: {
-    	nextEl: '.button-next_child_2',
-    	prevEl: '.button-prev_child_2',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-    },
-});
-const swiper4 = new Swiper(".swiperChild_3", {
-    speed: 400,
-    navigation: {
-    	nextEl: '.button-next_child_3',
-    	prevEl: '.button-prev_child_3',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-    },
-});
-const swiper5 = new Swiper(".swiperChild_4", {
-    speed: 400,
-    navigation: {
-    	nextEl: '.button-next_child_4',
-    	prevEl: '.button-prev_child_4',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-    },
-});
+const swiperChild = document.querySelectorAll(".revInnerSlider")
 
-const swiper6 = new Swiper(".swiperChild_5", {
-    speed: 400,
-    navigation: {
-    	nextEl: '.button-next_child_5',
-    	prevEl: '.button-prev_child_5',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+for(let i = 1; i <= swiperChild.length; i++){
+    const swiper2 = new Swiper(`.swiperChild_${i}`, {
+        speed: 400,
+        loop:true,
+        navigation: {
+            nextEl: `.button-next_child_${i}`,
+            prevEl: `.button-prev_child_${i}`,
         },
-    },
-});
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+        },
+    });
+}
+
 
 // ********************* burger_menu ****************************
 
