@@ -78,18 +78,6 @@ submenu.onmouseleave = () => {
   submenu_block.classList.replace("block", "hidden")
 }
 
-// ************************* header:hover **************************************
+// ***************************************************************
 
-const submenu_mobile = document.querySelectorll(".submenu_mobile")
-const submenu_icon_mobile = document.querySelector(".submenu_icon_mobile")
-const submenu_block_mobile = document.querySelector(".submenu_block_mobile")
-
-submenu_mobile.onfocus = () => {
-  submenu_icon_mobile.classList.replace("rotate-180", "rotate-0")
-  submenu_block_mobile.classList.replace("hidden", "block")
-}
-
-submenu_mobile.onblur = () => {
-  submenu_icon_mobile.classList.replace("rotate-0","rotate-180")
-  submenu_block_mobile.classList.replace("block", "hidden")
-}
+Fancybox.bind("[data-fancybox]");

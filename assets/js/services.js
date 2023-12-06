@@ -54,4 +54,16 @@ for(let i = 1; i <= swiperChild.length; i++){
             },
         },
     });
+    
+    const length = document.querySelector(`.swiperChild_${i}`).querySelectorAll(".swiper-slide").length
+    const button_prev = document.querySelector(`.swiperChild_${i}`).querySelector(`.button-prev_child_${i}`)
+    const button_next = document.querySelector(`.swiperChild_${i}`).querySelector(`.button-next_child_${i}`)
+
+    if(length <= 1){
+        button_next.classList.add("hidden")
+        button_prev.classList.add("hidden")
+    }else{
+        button_next.classList.remove("hidden")
+        button_prev.classList.remove("hidden")
+    }
 }
