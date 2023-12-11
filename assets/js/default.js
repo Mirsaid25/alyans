@@ -78,7 +78,3 @@ submenu.onmouseleave = () => {
   submenu_block.classList.replace("block", "hidden")
 }
 
-// ***************************************************************
-
-Fancybox.bind("[data-fancybox]");
-
