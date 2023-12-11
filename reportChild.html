@@ -588,7 +588,7 @@
                     class="accordion2_button flex items-center gap-[10px] mt-5 cursor-pointer w-fit"
                 >
                     <p
-                        class="text-lg max-md:text-base max-sm:text-[14px] text-[#8859CF] font-medium"
+                        class="accordion2_button_text text-lg max-md:text-base max-sm:text-[14px] text-[#8859CF] font-medium"
                     >
                         Развернуть
                     </p>
@@ -1404,13 +1404,17 @@
         <script type="module" src="./assets/js/reports.js"></script>
         <script type="module" src="./assets/js/default.js"></script>
         <script>
-            const accordion2_button =
-                document.querySelector(".accordion2_button");
+            const accordion2_button = document.querySelector(".accordion2_button");
+            const accordion2_button_text = accordion2_button.querySelector("p");
             const accordion2_icon = document.querySelector(".accordion2_icon");
-            const accordion2_block =
-                document.querySelector(".accordion2_block");
+            const accordion2_block = document.querySelector(".accordion2_block");
 
             accordion2_button.onclick = () => {
+                if(accordion2_block.classList.contains("hidden")){
+                    accordion2_button_text.innerHTML = "Свернуть"
+                }else(
+                    accordion2_button_text.innerHTML = "Развернуть"
+                )
                 accordion2_block.classList.toggle("hidden");
                 accordion2_icon.classList.toggle("rotate-180");
             };

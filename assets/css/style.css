@@ -98,6 +98,7 @@ ol {
 /* text-[18px] max-md:text-base max-sm:text-sm */
 .pText{
     font-size: 18px;
+    font-weight: 500;
 }
 .h2Text{
     font-size: 36px;
