@@ -82,14 +82,3 @@ submenu.onmouseleave = () => {
 
 Fancybox.bind("[data-fancybox]");
 
-// ************************ accordion ******************************
-
-const accordion_button = document.querySelector(".accordion_button")
-const accordion_icon = accordion_button.querySelector(".accordion_icon")
-const accordion_block = document.querySelector(".accordion_block")
-
-accordion_button.onclick = () =>{
-  accordion_button.classList.toggle("mb-5")
-	accordion_block.classList.toggle('max-h-0')
-	accordion_icon.classList.toggle('rotate-180')
-}

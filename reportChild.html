@@ -560,10 +560,32 @@
                     >
                         Царапины на полотне входной двери.
                     </li>
+                    <div class="accordion2_block hidden">
+                        <li
+                            class="text-lg max-md:text-base max-sm:text-[14px] font-medium"
+                        >
+                            Царапины на полотне входной двери.
+                        </li>
+                        <li
+                            class="text-lg max-md:text-base max-sm:text-[14px] font-medium"
+                        >
+                            Царапины на полотне входной двери.
+                        </li>
+                        <li
+                            class="text-lg max-md:text-base max-sm:text-[14px] font-medium"
+                        >
+                            Царапины на полотне входной двери.
+                        </li>
+                        <li
+                            class="text-lg max-md:text-base max-sm:text-[14px] font-medium"
+                        >
+                            Царапины на полотне входной двери.
+                        </li>
+                    </div>
                 </ol>
 
                 <div
-                    class="flex items-center gap-[10px] mt-5 cursor-pointer w-fit"
+                    class="accordion2_button flex items-center gap-[10px] mt-5 cursor-pointer w-fit"
                 >
                     <p
                         class="text-lg max-md:text-base max-sm:text-[14px] text-[#8859CF] font-medium"
@@ -573,7 +595,7 @@
                     <img
                         src="./assets/img/icon/to_bootom_active.svg"
                         alt=""
-                        class="max-sm:w-[12px] max-sm:h-[6px]"
+                        class="max-sm:w-[12px] max-sm:h-[6px] accordion2_icon"
                     />
                 </div>
             </section>
@@ -603,7 +625,11 @@
                                 <div
                                     class="w-full h-[200px] bg-[#444444] rounded-[8px] overflow-hidden"
                                 >
-                                    <img src="#" alt="" class="w-full h-full object-cover" />
+                                    <img
+                                        src="#"
+                                        alt=""
+                                        class="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <p
                                     class="mt-[10px] text-[#999999] font-medium text-[14px]"
@@ -616,7 +642,11 @@
                                 <div
                                     class="w-full h-[200px] bg-[#444444] rounded-[8px] overflow-hidden"
                                 >
-                                    <img src="#" alt="" class="w-full h-full object-cover" />
+                                    <img
+                                        src="#"
+                                        alt=""
+                                        class="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <p
                                     class="mt-[10px] text-[#999999] font-medium text-[14px]"
@@ -629,7 +659,11 @@
                                 <div
                                     class="w-full h-[200px] bg-[#444444] rounded-[8px] overflow-hidden"
                                 >
-                                    <img src="#" alt="" class="w-full h-full object-cover" />
+                                    <img
+                                        src="#"
+                                        alt=""
+                                        class="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <p
                                     class="mt-[10px] text-[#999999] font-medium text-[14px]"
@@ -642,7 +676,11 @@
                                 <div
                                     class="w-full h-[200px] bg-[#444444] rounded-[8px] overflow-hidden"
                                 >
-                                    <img src="#" alt="" class="w-full h-full object-cover" />
+                                    <img
+                                        src="#"
+                                        alt=""
+                                        class="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <p
                                     class="mt-[10px] text-[#999999] font-medium text-[14px]"
@@ -655,7 +693,11 @@
                                 <div
                                     class="w-full h-[200px] bg-[#444444] rounded-[8px] overflow-hidden"
                                 >
-                                    <img src="#" alt="" class="w-full h-full object-cover" />
+                                    <img
+                                        src="#"
+                                        alt=""
+                                        class="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <p
                                     class="mt-[10px] text-[#999999] font-medium text-[14px]"
@@ -1361,5 +1403,17 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script type="module" src="./assets/js/reports.js"></script>
         <script type="module" src="./assets/js/default.js"></script>
+        <script>
+            const accordion2_button =
+                document.querySelector(".accordion2_button");
+            const accordion2_icon = document.querySelector(".accordion2_icon");
+            const accordion2_block =
+                document.querySelector(".accordion2_block");
+
+            accordion2_button.onclick = () => {
+                accordion2_block.classList.toggle("hidden");
+                accordion2_icon.classList.toggle("rotate-180");
+            };
+        </script>
     </body>
 </html>
