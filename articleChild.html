@@ -504,27 +504,27 @@
                 </div>
 
                 <div
-                    class="py-[36px] px-[65px] max-sm:py-5 max-sm:px-[25px] border-2 border-[#EFE3F8] rounded-[5px] mt-10"
+                    class="accordion py-[36px] px-[65px] max-sm:py-5 max-sm:px-[25px] border-2 border-[#EFE3F8] rounded-[5px] mt-10 overflow-hidden"
                 >
-                    <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="accordion_button flex items-center gap-2 cursor-pointer mb-5 cursor-pointer w-fit transition ease-out duration-200">
                         <h4 class="text-[22px] font-semibold">Оглавление</h4>
                         <img
                             src="./assets/img/icon/to_bootom_active.svg"
-                            class="rotate-180"
+                            class="rotate-180 accordion_icon transition ease-out duration-200"
                             alt=""
                         />
                     </div>
-                    <ul class="text-lg font-medium">
-                        <li class="mt-5 underline">
-                            <a href="#">Профессиональная приемка квартиры</a>
+                    <ul class="accordion_block h-auto text-lg font-medium overflow-hidden transition ease-out duration-200">
+                        <li>
+                            <a href="#anchor1" class="border-b border-black border-dashed">Профессиональная приемка квартиры</a>
                         </li>
-                        <li class="mt-5 underline">
-                            <a href="#">
+                        <li class="mt-5">
+                            <a href="#anchor2" class="border-b border-black border-dashed">
                                 Независимая экспертиза качества ремонтных работ
                             </a>
                         </li>
-                        <li class="mt-5 underline">
-                            <a href="#">
+                        <li class="mt-5">
+                            <a href="#anchor3" class="border-b border-black border-dashed">
                                 Права дольщика при обнаружении дефектов в
                                 отделке
                                 <br />от застройщика
@@ -566,6 +566,7 @@
                 <div>
                     <h2
                         class="h2Text"
+                        id="anchor1"
                     >
                         Профессиональная приемка квартиры
                     </h2>
@@ -627,7 +628,8 @@
 
                 <div class="mt-[60px]">
                     <h2
-                        class="text-[36px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[20px] font-medium"
+                        class="h2Text font-medium"
+                        id="anchor2"
                     >
                         Независимая экспертиза качества ремонтных работ
                     </h2>
@@ -921,7 +923,7 @@
             </section>
 
             <section
-                class="mt-[100px] max-lg:mt-[80px] max-md:mt-[60px] max-sm:mt-[50px] bg-gradient-to-r from-[#8859cf] to-[#a959cf] pt-[80px] max-lg:pt-[60px] max-md:pt-[50px] max-sm:pt-[30px] pb-[120px] max-lg:pb-[100px] max-md:pb-[70px]"
+                class="bg-gradient-to-r from-[#8859cf] to-[#a959cf] pt-[80px] max-lg:pt-[60px] max-md:pt-[50px] max-sm:pt-[30px] pb-[120px] max-lg:pb-[100px] max-md:pb-[70px]"
             >
                 <div class="w-[80%] max-w-[1110px] max-sm:w-[90%] m-auto">
                     <p
