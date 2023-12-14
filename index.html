@@ -2755,9 +2755,9 @@
             </div>
         </footer>
 
-        <div class="hidden fixed top-0 left-0 bg-[#26124570] w-full h-screen z-10">
+        <div class="pop_up_modal hidden fixed top-0 left-0 bg-[#26124570] w-full h-screen z-10">
             <div
-                class="w-full max-w-[1110px] max-xl:max-w-[1000px] max-lg:max-w-[700px] max-md:max-w-[600px] max-sm:w-[90%] bg-white h-[500px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[5px] overflow-hidden"
+                class="w-full max-w-[1110px] max-xl:max-w-[1000px] max-lg:max-w-[700px] max-md:max-w-[600px] max-sm:w-[90%] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[5px] overflow-hidden"
             >
                 <div class="flex">
                     <div class="w-full">
@@ -2823,7 +2823,7 @@
                     </div>
                     <img
                         src="./assets/img/icon/close-icon.svg"
-                        class="w-[14px] h-[14px] absolute top-5 right-5 cursor-pointer"
+                        class="modal_close w-[14px] h-[14px] absolute top-5 right-5 cursor-pointer"
                         alt=""
                     />
                 </div>
@@ -2833,5 +2833,18 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script type="module" src="./assets/js/main.js"></script>
         <script type="module" src="./assets/js/default.js"></script>
+        <script>
+            const pop_up_modal = document.querySelector(".pop_up_modal")
+            const modal_close = pop_up_modal.querySelector(".modal_close")
+
+            setTimeout(() => {
+                pop_up_modal.classList.remove("hidden")
+            }, 2000);
+
+            modal_close.onclick = () => {
+                pop_up_modal.classList.add("hidden")
+            }
+
+        </script>
     </body>
 </html>
